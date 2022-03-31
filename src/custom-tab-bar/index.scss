@@ -1,4 +1,19 @@
 .tabbar-wrap{
   height: 60px;
   display: flex;
+  justify-content: space-around;
+  align-items: center;
+  .tabbar-item{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: 12px;
+    .icon{
+      width: 36px;
+      height: 36px;
+    }
+    .selected{
+      color: #2295ff;
+    }
+  }
 }

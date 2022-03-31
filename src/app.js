@@ -1,11 +1,21 @@
 import React, { useEffect } from "react";
-import { useDidShow, useDidHide } from "@tarojs/taro";
-import 'taro-ui/dist/style/index.scss'
+import Taro, { useDidShow, useDidHide } from "@tarojs/taro";
+import "taro-ui/dist/style/index.scss";
 import "./app.scss";
 
 function App(props) {
   // 可以使用所有的 React Hooks
-  useEffect(() => {});
+  useEffect(() => {
+    Taro.getSystemInfo({
+      success: res => {
+        const {
+          safeArea: { bottom },
+          screenHeight
+        } = res;
+        Taro.setStorageSync("safeBottom", screenHeight - bottom);
+      }
+    });
+  });
 
   // 对应 onShow
   useDidShow(() => {});
