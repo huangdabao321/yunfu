@@ -1,6 +1,5 @@
 import React, { useEffect } from "react";
 import Taro, { useDidShow, useDidHide } from "@tarojs/taro";
-import "taro-ui/dist/style/index.scss";
 import "./app.scss";
 
 function App(props) {

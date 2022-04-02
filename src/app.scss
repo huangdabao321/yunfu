@@ -1,1 +1,9 @@
+$hd: 1;
+$default-color: #2295ff;
 
+$at-tabs-color: #444444;
+$at-tabs-color-active: $default-color;
+
+$at-tag-font-size: 14px;
+$at-tag-font-size-sm: 12px;
+@import "taro-ui/dist/style/index.scss";
