@@ -1,3 +1,6 @@
+.index-container{
+  background-color: #f1f1f1;
+}
 .search-wrap{
   box-sizing: border-box;
   height: 60px;
@@ -29,6 +32,7 @@
   flex-wrap: wrap;
   justify-content: space-between;
   padding: 20px 66px;
+  background-color: white;
   .category-item{
     display: flex;
     flex-direction: column;
@@ -75,6 +79,7 @@
   align-items: center;
   padding: 12px 17px;
   font-size: 16px;
+  flex: 0 0 38px;
   .at-tabs__item-underline{
     position: relative;
     top: 9px;
@@ -89,7 +94,18 @@
   font-weight: bold;
 }
 .tab-wrap{
+  margin-bottom: 80px;
+  background-color: white;
   .content{
     padding: 11px 17px;
+    .title{
+      font-weight: bold;
+      font-size: 18px;
+    }
+    .msg{
+      font-size: 16px;
+      line-height: 1.4;
+      color: #101010;
+    }
   }
 }

@@ -1,0 +1,48 @@
+.content{
+  padding: 11px 17px;
+  border-bottom: 1px solid rgb(245, 245, 245);
+}
+.title{
+  font-weight: bold;
+  font-size: 18px;
+}
+.tips{
+  font-weight: bold;
+  font-size: 18px;
+}
+
+.pic_item{
+  width: 88px;
+  height: 88px;
+  border-radius: 8px;
+}
+.publish{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: #999;
+  font-size: 14px;
+}
+.left{
+  display: flex;
+}
+.avatar{
+  width: 20px;
+  height: 20px;
+  margin-right: 9px;
+}
+.nickname{
+  margin-right: 18px;
+}
+.publish_at{
+
+}
+.icon{
+ font-size: 20px;
+ vertical-align: middle;
+ margin-right: 9px;
+}
+.view_number{
+  font-size: 14px;
+  line-height: 20px;
+}

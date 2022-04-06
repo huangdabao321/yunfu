@@ -1,0 +1,45 @@
+.multi{
+  display: grid;
+  grid-template-columns: repeat(4, 88px);
+  grid-column-gap: 8px;
+  overflow: hidden;
+  padding: 10px;
+}
+.multi-mask{
+  position: relative;
+  .number{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    background-color: rgba(0, 0, 0, 0.459);
+    font-size: 28px;
+    text-align: center;
+    color: #f1f1f7;
+    font-weight: bold;
+  }
+}
+
+.sigle_wrap{
+  display: flex;
+  padding: 12px 0;
+  .detail{
+    flex: 0 0 calc(100vw - 34px - 88px - 10px);
+    font-size: 16px;
+    line-height: 2;
+    display: -webkit-box;
+    overflow: hidden;
+    -webkit-line-clamp: 4;
+    -webkit-box-orient: vertical;
+  }
+  .sigle{
+    flex: 0 0 88px;
+  }
+}
+.multi_wrap{
+  padding: 12px 0;
+}

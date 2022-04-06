@@ -1,0 +1,22 @@
+.about{
+  .item{
+    font-size: 18px;
+  }
+  .at-list__item .item-extra__icon-arrow {
+    color: #CCC;
+    font-size: 20px;
+  }
+  .about-content{
+    padding: 20px 50px;
+    text-align: center;
+    .content-title{
+      padding: 18px 0;
+      font-size: 18px;
+    }
+    .content{
+      word-wrap: break-word;
+      font-size: 14px;
+    }
+  }
+}
+

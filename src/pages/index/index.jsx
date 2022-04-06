@@ -1,7 +1,8 @@
 import React, { useState } from "react";
 import Taro from "@tarojs/taro";
 import { View, Text, Swiper, SwiperItem, Image } from "@tarojs/components";
-import { AtAvatar, AtTabs, AtTabsPane, AtTag } from "taro-ui";
+import { AtTabs, AtTabsPane } from "taro-ui";
+import Content from "./TabContent";
 import "./index.scss";
 
 const index = () => {
@@ -10,7 +11,7 @@ const index = () => {
     setCurrent(index);
   };
   return (
-    <View>
+    <View className="index-container">
       <View className="search-wrap">
         <View className="title">
           <Text>沄府信息中心</Text>
@@ -72,40 +73,14 @@ const index = () => {
         className="tab-wrap"
       >
         <AtTabsPane current={current} index={0}>
-          <View className="content">
-            <View className="title">
-              <AtTag size="small">招聘</AtTag>
-              <AtTag size="small">推广</AtTag>
-              <Text>小区停车车售租说明!</Text>
-            </View>
-            <View className="tip-tag">
-              <AtTag>包住</AtTag>
-              <AtTag>男女不限</AtTag>
-              <AtTag>随时上班</AtTag>
-            </View>
-            <View className="msg">
-              <Text>
-                关于某某小区停车位售出与出租的说明， 请各位业务和租户知晓！
-              </Text>
-              <Image />
-            </View>
-            <View className="publisher">
-              <AtAvatar size="small" circle text="头"/>
-              <Text>天成小王子</Text>
-              <Text>12月13日 23:22</Text>
-              <View className='at-icon at-icon-eye'></View>
-            </View>
-          </View>
+          <Content />
+          <Content />
         </AtTabsPane>
         <AtTabsPane current={current} index={1}>
-          <View style="padding: 100px 50px;background-color: #FAFBFC;text-align: center;">
-            标签页二的内容
-          </View>
+          <Content />
         </AtTabsPane>
         <AtTabsPane current={current} index={2}>
-          <View style="padding: 100px 50px;background-color: #FAFBFC;text-align: center;">
-            标签页三的内容
-          </View>
+          <Content />
         </AtTabsPane>
       </AtTabs>
     </View>
